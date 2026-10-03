@@ -1,2 +1,3 @@
-# -goldenchildrensfuture.github.io
-    Official website of Golden Children's Future Foundation
+# Golden Children's Future Foundation
+
+Static website for GitHub Pages.
