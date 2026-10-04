@@ -1,177 +1,192 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="روضة الأصابع الذهبية - جرمانا، كرم الصمادي. تعليم مبكر، مونتيسوري، صعوبات تعلم، حساب ذهني، تعليم باللعب والمرح.">
-  <title>روضة الأصابع الذهبية | جرمانا</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playpen+Sans+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --gold:#c9972b; --gold2:#f0c95a; --cream:#fffaf0; --ink:#342b25;
-      --soft:#f7edd8; --rose:#e89b8c; --green:#8fb69b; --white:#fff;
-      --shadow:0 18px 50px rgba(73,54,27,.12);
-    }
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;font-family:Cairo,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.8}
-    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
-    .topbar{background:#342b25;color:#fff;font-size:14px;padding:7px 0}
-    .topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-    header{position:sticky;top:0;z-index:20;background:rgba(255,250,240,.94);backdrop-filter:blur(12px);border-bottom:1px solid #eadfc9}
-    nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:22px}
-    .brand-mark{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#f5d36d,#b77c17);color:#fff;font-size:24px;box-shadow:0 8px 22px #c9972b44}
-    .links{display:flex;gap:24px;font-weight:600}.links a:hover{color:var(--gold)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:12px 22px;font-weight:800;cursor:pointer;font-family:inherit}
-    .btn-primary{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#fff;box-shadow:0 10px 25px #c9972b38}
-    .btn-outline{border:1px solid #d9bf86;background:#fffaf0;color:#8c671d}
-    .hero{padding:70px 0 55px;overflow:hidden;background:
-      radial-gradient(circle at 85% 15%,#f6d87955,transparent 28%),
-      radial-gradient(circle at 5% 70%,#e8a69b33,transparent 25%);}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
-    .eyebrow{display:inline-block;background:#fff;border:1px solid #ead7ad;border-radius:999px;padding:5px 14px;color:#8c671d;font-weight:700;font-size:14px}
-    h1{font-family:"Playpen Sans Arabic",Cairo,sans-serif;font-size:clamp(42px,6vw,76px);line-height:1.15;margin:18px 0 12px;color:#3b3027}
-    .gold-text{color:var(--gold)} .hero p{font-size:20px;max-width:650px;color:#66584e}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-    .hero-card{position:relative;min-height:480px;border-radius:38px;background:linear-gradient(145deg,#f4d46d,#fff4c9);box-shadow:var(--shadow);overflow:hidden;border:8px solid #fff}
-    .hero-card:before{content:"";position:absolute;inset:25px;border:1px solid #ffffffaa;border-radius:28px}
-    .hero-scene{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:35px}
-    .scene-circle{width:270px;height:270px;border-radius:50%;background:#fff8;display:grid;place-items:center;font-size:100px;box-shadow:0 15px 40px #b27d1c20}
-    .hero-label{position:absolute;bottom:28px;right:28px;left:28px;background:#fffdf8ee;border-radius:22px;padding:15px 20px;text-align:center;font-weight:800}
-    .section{padding:80px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 38px}
-    .section-head h2{font-size:36px;margin:0 0 8px}.section-head p{color:#75675d}
-    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .feature{background:#fff;border:1px solid #eee1cb;border-radius:24px;padding:25px;box-shadow:0 10px 30px #5b47231a;transition:.2s}
-    .feature:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-    .icon{width:54px;height:54px;border-radius:18px;display:grid;place-items:center;background:var(--soft);font-size:27px;margin-bottom:12px}
-    .feature h3{margin:0 0 5px}.feature p{margin:0;color:#74685f}
-    .about{background:#fff}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
-    .photo-panel{min-height:390px;border-radius:34px;background:linear-gradient(145deg,#dbead8,#fff1bd);display:grid;place-items:center;font-size:110px;box-shadow:var(--shadow);border:8px solid #fff}
-    .checklist{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
-    .check{background:#fffaf0;border:1px solid #eadfc9;border-radius:15px;padding:10px 13px;font-weight:600}
-    .hours{background:linear-gradient(135deg,#4c3d33,#2f2823);color:#fff}
-    .hours-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .hour-card{border:1px solid #ffffff25;background:#ffffff0c;border-radius:24px;padding:25px}
-    .hour-card h3{color:#f2cd69;margin-top:0}.hour-card p{margin:4px 0;color:#eee}
-    .contact{background:#f7edd8}.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
-    .contact-card{background:#fff;border-radius:26px;padding:28px;box-shadow:var(--shadow)}
-    .contact-item{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #eee5d6}
-    .contact-item:last-child{border-bottom:0}.contact-item b{display:block}.contact-item span{color:#75675d}
-    footer{background:#342b25;color:#fff;padding:35px 0;text-align:center}
-    .social{display:inline-flex;margin-top:12px}
-    .badge{display:inline-block;background:#fff1c5;color:#8a6316;border:1px solid #e2c577;padding:4px 12px;border-radius:999px;font-size:13px;font-weight:800}
-    @media(max-width:850px){
-      .links{display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
-      .features{grid-template-columns:1fr 1fr}.hero-card{min-height:360px}.photo-panel{min-height:300px}
-    }
-    @media(max-width:560px){
-      .features,.hours-grid,.checklist{grid-template-columns:1fr}
-      .hero{padding-top:45px}.section{padding:55px 0}.hero p{font-size:17px}
-      nav{height:68px}.brand{font-size:18px}.brand-mark{width:42px;height:42px}
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="مؤسسة مستقبل الأطفال الذهبي — بدايات واعدة .. لمستقبل أفضل">
+<title>مؤسسة مستقبل الأطفال الذهبي | Golden Children's Future Foundation</title>
+<style>
+:root{
+  --navy:#102a43; --navy2:#173f5f; --gold:#b98518; --gold2:#d7a93d;
+  --cream:#fbf7ef; --paper:#fffdf8; --ink:#263238; --muted:#68737c;
+  --teal:#4e8c8a; --line:rgba(16,42,67,.12); --shadow:0 20px 60px rgba(16,42,67,.13);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Tahoma,"Arial",sans-serif;line-height:1.8}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy)}
+.brand img{width:58px;height:58px;object-fit:contain;border-radius:50%}
+.brand small{display:block;font-weight:500;color:var(--gold);font-size:11px;letter-spacing:.5px}
+nav{display:flex;gap:22px;align-items:center;font-size:14px;color:var(--navy)}
+nav a:hover{color:var(--gold)}
+.lang{border:1px solid var(--line);padding:7px 12px;border-radius:20px;background:white;cursor:pointer;color:var(--navy)}
+.hero{min-height:650px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding:58px 0 70px}
+.hero-copy{order:2}.hero-media{order:1;position:relative}
+.kicker{color:var(--gold);font-weight:800;letter-spacing:.8px;font-size:14px}
+h1{font-size:clamp(36px,5vw,66px);line-height:1.12;color:var(--navy);margin:12px 0 18px}
+h1 span{color:var(--gold)}
+.lead{font-size:20px;color:#49545d;max-width:650px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:13px 22px;border-radius:30px;font-weight:700;border:1px solid var(--navy);display:inline-block}
+.btn.primary{background:var(--navy);color:white}.btn.secondary{background:white;color:var(--navy)}
+.hero-card{border-radius:32px;overflow:hidden;box-shadow:var(--shadow);background:#fff;position:relative}
+.hero-card img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover}
+.hero-badge{position:absolute;bottom:18px;right:18px;background:rgba(255,253,248,.94);border:1px solid rgba(185,133,24,.25);padding:12px 16px;border-radius:18px;color:var(--navy);font-weight:800}
+section{padding:85px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 42px}
+.section-head h2{font-size:38px;color:var(--navy);margin:0 0 8px}
+.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 10px 35px rgba(16,42,67,.06)}
+.card .num{font-size:13px;color:var(--gold);font-weight:800}.card h3{color:var(--navy);margin:7px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.photo{border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}
+.photo img{width:100%;display:block}
+.quote{background:var(--navy);color:white;border-radius:30px;padding:42px;text-align:center}
+.quote img{width:100%;max-height:520px;object-fit:cover;border-radius:20px;margin-bottom:22px}
+.quote blockquote{font-size:30px;margin:0 0 8px;color:#fff}
+.quote small{color:#e6c46d}
+.programs .card{padding:0;overflow:hidden}.programs .card img{width:100%;height:210px;object-fit:cover}.programs .card-body{padding:22px}
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.video-card{background:var(--paper);border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 10px 35px rgba(16,42,67,.06)}
+.video-card video{width:100%;display:block;aspect-ratio:16/9;background:#0d1d2d}
+.video-card div{padding:18px}.video-card h3{margin:0;color:var(--navy)}
+.contact{background:var(--navy);color:white}.contact .section-head h2{color:white}.contact .section-head p{color:#d7e0e8}
+.contact-box{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.contact-item{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:22px;padding:24px}
+.contact-item strong{display:block;color:#e6c46d;margin-bottom:5px}
+footer{background:#0a1e2e;color:#cbd5dd;padding:25px 0;text-align:center;font-size:13px}
+.logo-large{width:230px;max-width:70%;margin:auto;display:block}
+.notice{font-size:13px;color:#6c757d;margin-top:16px}
+[dir="ltr"] body{font-family:Arial,Tahoma,sans-serif}
+[dir="ltr"] .hero-copy{order:1}[dir="ltr"] .hero-media{order:2}
+@media(max-width:850px){
+  .nav{height:70px}.brand img{width:48px;height:48px}nav{display:none}
+  .hero,.split{grid-template-columns:1fr}.hero-copy,.hero-media{order:initial}
+  .hero{padding-top:35px}.grid,.contact-box{grid-template-columns:1fr}.video-grid{grid-template-columns:1fr}
+  section{padding:62px 0}.section-head h2{font-size:30px}.lead{font-size:18px}
+}
+</style>
 </head>
 <body>
-  <div class="topbar"><div class="container"><span>🌟 مؤسسة مرخّصة</span><span>📍 جرمانا – كرم الصمادي – الحارة السابعة</span></div></div>
+<header>
+<div class="wrap nav">
+<a class="brand" href="#top">
+<img src="assets/logo.png" alt="شعار مؤسسة مستقبل الأطفال الذهبي">
+<div>مؤسسة مستقبل الأطفال الذهبي<small>Golden Children's Future Foundation</small></div>
+</a>
+<nav>
+<a href="#about">من نحن</a><a href="#vision">الرؤية والرسالة</a><a href="#programs">برامجنا</a><a href="#media">المعرض</a><a href="#contact">تواصل معنا</a>
+<button class="lang" onclick="toggleLang()">English</button>
+</nav>
+</div>
+</header>
 
-  <header>
-    <nav class="container">
-      <a class="brand" href="#home"><span class="brand-mark">✋</span><span>روضة الأصابع الذهبية</span></a>
-      <div class="links">
-        <a href="#about">عن الروضة</a><a href="#programs">البرامج</a><a href="#hours">الدوام</a><a href="#contact">التواصل</a>
-      </div>
-      <a class="btn btn-primary" href="tel:0957572219">اتصل بنا</a>
-    </nav>
-  </header>
+<main id="top">
+<section class="hero wrap">
+<div class="hero-copy">
+<div class="kicker" data-ar="مؤسسة أهلية غير ربحية • سورية" data-en="Nonprofit foundation • Syria">مؤسسة أهلية غير ربحية • سورية</div>
+<h1 data-ar="كل طفل… <span>بصمة مميزة</span>" data-en="Every child… <span>a unique imprint</span>">كل طفل… <span>بصمة مميزة</span></h1>
+<p class="lead" data-ar="بدايات واعدة .. لمستقبل أفضل. نعمل على دعم الطفولة المبكرة، وتنمية قدرات الأطفال، وبناء بيئات آمنة وداعمة لهم ولأسرهم." data-en="Bright Beginnings .. A Brighter Future. We support early childhood, nurture children's abilities, and help build safe, supportive environments for children and families.">بدايات واعدة .. لمستقبل أفضل. نعمل على دعم الطفولة المبكرة، وتنمية قدرات الأطفال، وبناء بيئات آمنة وداعمة لهم ولأسرهم.</p>
+<div class="cta"><a class="btn primary" href="#programs" data-ar="اكتشف برامجنا" data-en="Explore our programs">اكتشف برامجنا</a><a class="btn secondary" href="#contact" data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</a></div>
+</div>
+<div class="hero-media">
+<div class="hero-card"><img src="assets/hero-girl.png" alt="طفلة في نشاط إبداعي"></div>
+<div class="hero-badge">Bright Beginnings • A Brighter Future</div>
+</div>
+</section>
 
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">من عمر سنة حتى 5 سنوات</span>
-          <h1>طفولة سعيدة<br><span class="gold-text">وبداية ذهبية</span></h1>
-          <p>في روضة الأصابع الذهبية ندمج التعلم باللعب والمرح، ونساعد أطفالنا على اكتشاف مهاراتهم في بيئة دافئة وآمنة ومحفّزة.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">تواصل معنا</a>
-            <a class="btn btn-outline" href="#programs">اكتشف برامجنا</a>
-          </div>
-          <p style="font-size:14px;margin-top:18px"><span class="badge">مؤسسة مرخّصة</span></p>
-        </div>
-        <div class="hero-card">
-          <div class="hero-scene">
-            <div>
-              <div class="scene-circle">🧸🎨🧩</div>
-              <div class="hero-label">نتعلّم • نلعب • نكتشف • نبدع</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="about">
+<div class="wrap split">
+<div>
+<div class="kicker">ABOUT US</div>
+<h2 style="font-size:40px;color:var(--navy)">نبني الإنسان من بداياته الأولى</h2>
+<p>مؤسسة مستقبل الأطفال الذهبي مؤسسة أهلية غير ربحية تهدف إلى الإسهام في رعاية الطفولة المبكرة وتعزيز فرص التعلم والنمو الآمن للأطفال، مع دعم الأسرة والمجتمع في بناء بدايات أكثر جودة واستقرارًا.</p>
+<p>يتركز عمل المؤسسة في الجمهورية العربية السورية، مع إمكانية تنفيذ البرامج والأنشطة في مختلف المحافظات وفق الأطر القانونية والتراخيص اللازمة.</p>
+</div>
+<div class="photo"><img src="assets/classroom-children.png" alt="أطفال مع مربية في بيئة تعليمية داعمة"></div>
+</div>
+</section>
 
-    <section class="section" id="programs">
-      <div class="container">
-        <div class="section-head">
-          <h2>ما الذي نقدمه لأطفالكم؟</h2>
-          <p>برامج تجمع بين التعليم المبكر، تنمية المهارات، والمرح.</p>
-        </div>
-        <div class="features">
-          <article class="feature"><div class="icon">🌱</div><h3>تعليم مبكر</h3><p>أنشطة مناسبة للمرحلة العمرية تساعد الطفل على التطور والتعلم.</p></article>
-          <article class="feature"><div class="icon">🧠</div><h3>صعوبات تعلم</h3><p>اهتمام فردي ومتابعة تساعد على اكتشاف احتياجات الطفل ودعمها.</p></article>
-          <article class="feature"><div class="icon">🧩</div><h3>مونتيسوري</h3><p>أنشطة عملية تشجع الاستقلالية والتركيز والتعلم من خلال التجربة.</p></article>
-          <article class="feature"><div class="icon">🔢</div><h3>حساب ذهني</h3><p>تمارين ممتعة لتنمية التفكير والمهارات الحسابية لدى الأطفال.</p></article>
-          <article class="feature"><div class="icon">🎲</div><h3>التعلم باللعب</h3><p>نتعلم بطريقة محببة تجعل الطفل مشاركًا ومستمتعًا.</p></article>
-          <article class="feature"><div class="icon">🚌</div><h3>نشاطات ورحلات</h3><p>نشاطات ترفيهية ورحلات خارجية تضيف خبرات وذكريات جميلة.</p></article>
-        </div>
-      </div>
-    </section>
+<section id="vision" style="background:#f3ede1">
+<div class="wrap">
+<div class="section-head"><div class="kicker">VISION & MISSION</div><h2>رؤية واضحة… وأثر مستدام</h2><p>نؤمن بأن السنوات الأولى فرصة أساسية لصناعة مستقبل أفضل.</p></div>
+<div class="grid">
+<div class="card"><div class="num">01 • الرؤية</div><h3>طفولة آمنة ومزدهرة</h3><p>مجتمع يحصل فيه كل طفل على فرص مناسبة للتعلم والنمو واكتشاف قدراته ضمن بيئة آمنة ومحفزة.</p></div>
+<div class="card"><div class="num">02 • الرسالة</div><h3>رعاية • تعلم • تمكين</h3><p>تقديم برامج وخدمات تربوية واجتماعية وتنموية عالية الجودة، مع شراكة حقيقية مع الأسرة والمجتمع.</p></div>
+<div class="card"><div class="num">03 • القيم</div><h3>الكرامة والاحترام</h3><p>الإنسان أولًا؛ نلتزم بحماية الطفل، واحترام الخصوصية، والمساواة، والنزاهة، والمسؤولية.</p></div>
+</div>
+</div>
+</section>
 
-    <section class="section about" id="about">
-      <div class="container about-grid">
-        <div class="photo-panel">👧🏻 🧸 👦🏻</div>
-        <div>
-          <span class="eyebrow">بيئة دافئة ومحفّزة</span>
-          <h2>مكان ينمو فيه الطفل بثقة وفرح</h2>
-          <p>نؤمن أن السنوات الأولى هي أساس مهم لبناء شخصية الطفل. لذلك نحرص على تقديم تجربة تجمع الرعاية، التعلم، اللعب، والتفاعل الاجتماعي.</p>
-          <div class="checklist">
-            <div class="check">✓ تعلم ممتع</div><div class="check">✓ أنشطة متنوعة</div>
-            <div class="check">✓ تنمية المهارات</div><div class="check">✓ أجواء طفولية</div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section>
+<div class="wrap split">
+<div class="quote">
+<img src="assets/verse.png" alt="وأن ليس للإنسان إلا ما سعى">
+<blockquote>﴿ وَأَنْ لَيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ ﴾</blockquote>
+<small>سورة النجم – ٣٩</small>
+</div>
+<div>
+<div class="kicker">OUR APPROACH</div>
+<h2 style="font-size:38px;color:var(--navy)">نرعى البدايات… لنصنع مستقبلًا أفضل</h2>
+<p>نضع الطفل في مركز العمل، ونركز على التعلم من خلال اللعب، والإبداع، والاستكشاف، والتفاعل الإيجابي، مع اهتمام خاص بحماية الطفل ورفاهه.</p>
+<p>كما نسعى إلى بناء شراكات مع الأسر والمؤسسات التعليمية والجامعات والمختصين والجهات العامة والمنظمات المحلية والدولية والمانحين، ضمن ما يسمح به القانون.</p>
+</div>
+</div>
+</section>
 
-    <section class="section hours" id="hours">
-      <div class="container">
-        <div class="section-head"><h2>أوقات الدوام</h2><p style="color:#ddd">خيارات مناسبة للعائلات صباحًا ومساءً.</p></div>
-        <div class="hours-grid">
-          <div class="hour-card"><h3>☀️ الدوام الصباحي</h3><p><strong>من 8:00 صباحًا حتى 1:00 ظهرًا</strong></p></div>
-          <div class="hour-card"><h3>🌙 الدوام المسائي</h3><p><strong>أوقات مسائية مناسبة للجميع</strong></p><p>للاستفسار عن الأوقات المتاحة، يرجى التواصل معنا.</p></div>
-        </div>
-      </div>
-    </section>
+<section id="programs" class="programs" style="background:#fff">
+<div class="wrap">
+<div class="section-head"><div class="kicker">PROGRAMS</div><h2>مجالات عملنا</h2><p>برامج قابلة للتطوير وفق احتياجات الأطفال والأسر والمجتمعات المحلية.</p></div>
+<div class="grid">
+<div class="card"><img src="assets/boy-blocks.png" alt="طفل يتعلم من خلال اللعب"><div class="card-body"><h3>الطفولة المبكرة</h3><p>التعلم المبكر، رياض الأطفال والأنشطة النمائية المناسبة للطفولة.</p></div></div>
+<div class="card"><img src="assets/fingerprint.png" alt="طفلة في نشاط إبداعي"><div class="card-body"><h3>الإبداع واكتشاف القدرات</h3><p>الفنون والأنشطة الإبداعية وتنمية المهارات والقدرات الفردية.</p></div></div>
+<div class="card"><img src="assets/boy-learning.png" alt="طفل في بيئة تعليمية"><div class="card-body"><h3>الأسرة والمجتمع</h3><p>التوعية والدعم والشراكة مع الأسرة وبناء بيئات أكثر دعمًا للطفل.</p></div></div>
+</div>
+</div>
+</section>
 
-    <section class="section contact" id="contact">
-      <div class="container">
-        <div class="section-head"><h2>يسعدنا تواصلكم معنا</h2><p>للاستفسار والتسجيل ومعرفة تفاصيل الدوام المسائي.</p></div>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <div class="contact-item"><div>📍</div><div><b>العنوان</b><span>جرمانا – كرم الصمادي – المدخل مقابل الفرن الحديث – الحارة السابعة</span></div></div>
-            <div class="contact-item"><div>📞</div><div><b>الهاتف</b><span><a href="tel:0957572219">0957572219</a> &nbsp; | &nbsp; <a href="tel:0994417806">0994417806</a></span></div></div>
-            <div class="contact-item"><div>📘</div><div><b>فيسبوك</b><span><a href="https://www.facebook.com/profile.php?id=61577305750879" target="_blank" rel="noopener">صفحة روضة الأصابع الذهبية</a></span></div></div>
-          </div>
-          <div class="contact-card">
-            <h3>روضة الأصابع الذهبية</h3>
-            <p>من عمر سنة حتى 5 سنوات</p>
-            <p>تعليم مبكر • مونتيسوري • حساب ذهني • صعوبات تعلم • تعليم باللعب • نشاطات ورحلات</p>
-            <a class="btn btn-primary" href="https://www.facebook.com/profile.php?id=61577305750879" target="_blank" rel="noopener">تابعنا على فيسبوك</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+<section id="media" style="background:#f3ede1">
+<div class="wrap">
+<div class="section-head"><div class="kicker">MEDIA</div><h2>من قصتنا البصرية</h2><p>مجموعة من المواد المرئية التي تعبّر عن روح المؤسسة وهويتها.</p></div>
+<div class="video-grid">
+<div class="video-card"><video controls preload="metadata" poster="assets/hero-girl.png"><source src="assets/film-01.mp4" type="video/mp4"></video><div><h3>بدايات تصنع أثرًا</h3><p>لقطة سينمائية من المواد المرئية للمؤسسة.</p></div></div>
+<div class="video-card"><video controls preload="metadata" poster="assets/verse.png"><source src="assets/film-02.mp4" type="video/mp4"></video><div><h3>الأمل يبدأ من الطفل</h3><p>مادة بصرية مرتبطة برسالة الطفولة والمستقبل.</p></div></div>
+<div class="video-card"><video controls preload="metadata" poster="assets/boy-blocks.png"><source src="assets/film-03.mp4" type="video/mp4"></video><div><h3>التعلم من خلال اللعب</h3><p>الإبداع والاكتشاف كجزء من رحلة التعلم.</p></div></div>
+<div class="video-card"><video controls preload="metadata" poster="assets/boy-learning.png"><source src="assets/film-04.mp4" type="video/mp4"></video><div><h3>بيئة داعمة</h3><p>صورة المؤسسة كما نطمح أن يراها الطفل والأسرة.</p></div></div>
+</div>
+</div>
+</section>
 
-  <footer><div class="container">© 2026 روضة الأصابع الذهبية — مؤسسة مرخّصة</div></footer>
+<section id="contact" class="contact">
+<div class="wrap">
+<div class="section-head"><div class="kicker">CONTACT</div><h2>تواصل معنا</h2><p>يسعدنا استقبال الاستفسارات وفرص التعاون والشراكات.</p></div>
+<div class="contact-box">
+<div class="contact-item"><strong>البريد الإلكتروني</strong><a href="mailto:goldenfingersfoundation@gmail.com">goldenfingersfoundation@gmail.com</a></div>
+<div class="contact-item"><strong>المقر</strong><span>الجمهورية العربية السورية – محافظة ريف دمشق – منطقة مزرعة بيت جن – جانب جامع مزرعة بيت جن الكبير – العقار رقم 522</span></div>
+<div class="contact-item"><strong>نطاق العمل</strong><span>الجمهورية العربية السورية، مع إمكانية التوسع إلى مختلف المحافظات وفق القانون والتراخيص اللازمة.</span></div>
+</div>
+<p class="notice" style="color:#b9c5cf">ملاحظة: البريد الإلكتروني الظاهر هنا هو البريد الذي زودتنا به. يمكن تحديثه لاحقًا إذا تم اعتماد بريد مؤسسي جديد.</p>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">مؤسسة مستقبل الأطفال الذهبي — Golden Children's Future Foundation<br>بدايات واعدة .. لمستقبل أفضل | Bright Beginnings .. A Brighter Future</div>
+</footer>
+
+<script>
+let lang="ar";
+function toggleLang(){
+  lang = lang==="ar" ? "en" : "ar";
+  document.documentElement.lang=lang;
+  document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+  document.querySelector(".lang").textContent=lang==="ar"?"English":"العربية";
+  document.querySelectorAll("[data-ar]").forEach(el=>{
+    el.innerHTML=el.getAttribute("data-"+lang);
+  });
+}
+</script>
 </body>
 </html>

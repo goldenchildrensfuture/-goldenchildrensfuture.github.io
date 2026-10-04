@@ -1,3 +1,18 @@
-# Golden Children's Future Foundation
+# مؤسسة مستقبل الأطفال الذهبي
+Golden Children's Future Foundation
 
-Static website for GitHub Pages.
+موقع تعريفي ثابت جاهز للنشر على GitHub Pages.
+
+- الصفحة الرئيسية
+- من نحن
+- الرؤية والرسالة والقيم
+- مجالات العمل
+- معرض الصور والفيديو
+- تواصل معنا
+- تبديل العربية / English
+- تصميم متجاوب للهاتف والكمبيوتر
+
+البريد الإلكتروني المستخدم في الموقع:
+goldenfingersfoundation@gmail.com
+
+الموقع مبني بملف HTML واحد مع مجلد assets للصور والفيديوهات.
