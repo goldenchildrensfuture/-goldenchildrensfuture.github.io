@@ -1,0 +1,18 @@
+{
+  "images": {
+    "boy-blocks.png": "boy-blocks.webp",
+    "boy-learning.png": "boy-learning.webp",
+    "classroom-children.png": "classroom-children.webp",
+    "fingerprint.png": "fingerprint.webp",
+    "hero-girl.png": "hero-girl.webp",
+    "logo.png": "logo.webp",
+    "verse.png": "verse.webp"
+  },
+  "videos": {
+    "film-01.mp4": "film-01.mp4",
+    "film-02.mp4": "film-02.mp4",
+    "film-03.mp4": "film-03.mp4",
+    "film-04.mp4": "film-04.mp4"
+  },
+  "notes": "Web-optimized assets for GitHub Pages. Images are WebP; videos are MP4/H.264 with faststart where ffmpeg was available."
+}
